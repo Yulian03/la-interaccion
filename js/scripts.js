@@ -19,9 +19,13 @@ const nuevoEnlace = document.createElement('A')
 nuevoEnlace.href = 'nuevo-enlace.html';
 
 //Agregar el texto
-nuevoEnlace.textContent = 'Un Nuevo Enlace';
+nuevoEnlace.textContent = 'Tienda virtual';
 
 //Agregar la clase
 nuevoEnlace.classList.add ('navegacion__enlace');
+
+//Agregarlo al documento
+const navegacion = document.querySelector('.navegacion');
+navegacion.appendChild(nuevoEnlace);     //permite agregar una variable e insertarla a otra
 
 console.log (nuevoEnlace);
